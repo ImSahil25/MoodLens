@@ -1,6 +1,4 @@
----
 
-````markdown
 # 💬 Sentiment Analysis Project
 
 ## 📌 Overview
