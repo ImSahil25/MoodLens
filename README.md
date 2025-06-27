@@ -1,116 +1,73 @@
-# 🩺 Diabetes Predictor
+---
 
-This project is a machine learning-based web application that predicts whether a person is likely to have diabetes, using medical attributes as inputs. The model is trained on the Pima Indians Diabetes Dataset and deployed via a simple web interface using **Streamlit**.
+````markdown
+# 💬 Sentiment Analysis Project
 
-## 📂 Project Structure
+## 📌 Overview
+
+This project is a basic implementation of **Sentiment Analysis** using Python and machine learning techniques. It demonstrates the complete workflow from data preprocessing to model training, saving, and inference.
+
+---
+
+## 🗂️ Files in This Project
+
+| File Name                | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `sentiment.ipynb`        | Jupyter Notebook with data loading, preprocessing, training, and evaluation |
+| `sentiment_analysis.csv` | Dataset used for sentiment classification                                   |
+| `sentiment_model.pkl`    | Serialized model saved using `joblib`                                       |
+| `se.py`                  | Python script to load the model and perform sentiment predictions           |
+
+---
+
+## 📦 Requirements
+
+Ensure the following Python libraries are installed before running the notebook or scripts:
+
+- `pandas`  
+- `numpy`  
+- `scikit-learn`  
+- `nltk`  
+- `joblib`  
+- `matplotlib` *(optional, for visualization)*
+
+You can install them with:
+
+```bash
+pip install pandas numpy scikit-learn nltk joblib matplotlib
+````
+
+---
+
+## 🚀 How to Run
+
+### Using Jupyter Notebook
+
+1. Launch Jupyter and open `sentiment.ipynb`.
+2. Execute each cell sequentially:
+
+   * Load data from `sentiment_analysis.csv`
+   * Clean and preprocess text
+   * Extract features (TF-IDF)
+   * Train and evaluate the model
+   * Save model as `sentiment_model.pkl`
+
+### Using the Script
+
+Run `se.py` to:
+
+* Load the pre-trained model
+* Make predictions on custom input
+
+---
+
+## 📝 Notes
+
+* Ensure all files are in the same directory before executing any script or notebook.
+* This project assumes basic familiarity with Python, pandas, and machine learning workflows.
+
+---
+
+
 
 ```
-.
-├── app.py                    # Streamlit web app script
-├── Diabetes Prediction.ipynb # Jupyter notebook for data analysis and model training
-├── diabetes.csv              # Dataset used for training and testing
-└── README.md                 # Project documentation
-```
-
----
-
-## 🚀 Features
-
-- User-friendly interface to input medical data
-- Predicts diabetes based on model trained on 768 real cases
-- Built using Python, Pandas, Scikit-learn, and Streamlit
-- Clean visualizations and interactive form for input
-
----
-
-## 📊 Dataset
-
-The dataset (`diabetes.csv`) consists of the following medical parameters:
-
-```
-- Pregnancies
-- Glucose
-- Blood Pressure
-- Skin Thickness
-- Insulin
-- BMI
-- Diabetes Pedigree Function
-- Age
-- Outcome (0: No diabetes, 1: Diabetes)
-```
-
-Source: [Pima Indians Diabetes Database](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
-
----
-
-## ⚙️ Installation
-
-1. **Clone the repository:**
-   ```
-   git clone https://github.com/yourusername/diabetes-predictor.git
-   cd diabetes-predictor
-   ```
-
-2. **Install dependencies:**
-   ```
-   pip install -r requirements.txt
-   ```
-
-   If `requirements.txt` is not present, install manually:
-   ```
-   pip install pandas numpy scikit-learn streamlit
-   ```
-
-3. **Run the app:**
-   ```
-   streamlit run app.py
-   ```
-
----
-
-## 📌 Usage
-
-1. Open the app in a browser after running.
-2. Input the required medical data in the form.
-3. Click on **Predict**.
-4. The model will display whether the patient is likely to have diabetes.
-
----
-
-## 📈 Model Details
-
-- **Algorithm Used**: RandomForestClassifier (can be changed in notebook)
-- **Accuracy Achieved**: ~77% (can vary slightly)
-- **Preprocessing**: Handled missing/zero values, normalized features
-
----
-
-## 🔮 Future Scope
-
-- Integrate more sophisticated models like XGBoost or Neural Networks
-- Add login/authentication system
-- Visual analytics dashboard for healthcare professionals
-- Deploy using cloud platforms (e.g., AWS, Heroku)
-
----
-
-## 🧩 Real-World Applications
-
-- Assist doctors in early diabetes diagnosis
-- Patient self-assessment tool
-- Health camps and screening programs
-
----
-
-## 🤔 Known Issues / Challenges
-
-- Dataset has missing or zero values that need careful treatment
-- Limited size of dataset may affect generalizability
-- Basic UI – can be enhanced with CSS or React integration
-
----
-
-## 👨‍💻 Author
-
-**Sahil Adhikary**  
-Feel free to reach out for improvements, collaborations, or feedback!
