@@ -1,5 +1,5 @@
 
-# 💬 Sentiment Analysis Project
+# 💬 MoodLens
 
 ## 📌 Overview
 
