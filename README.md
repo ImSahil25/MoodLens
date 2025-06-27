@@ -1,14 +1,15 @@
 This project is a machine learning-based web application that predicts whether a person is likely to have diabetes, using medical attributes as inputs. The model is trained on the Pima Indians Diabetes Dataset and deployed via a simple web interface using Streamlit.
 
-📂 Project Structure
-bash
-Copy
-Edit
+## 📂 Project Structure
+
+```
 .
 ├── app.py                    # Streamlit web app script
 ├── Diabetes Prediction.ipynb # Jupyter notebook for data analysis and model training
-├── diabetes.csv             # Dataset used for training and testing
-└── README.md                # Project documentation
+├── diabetes.csv              # Dataset used for training and testing
+└── README.md                 # Project documentation
+```
+
 
 🚀 Features
 User-friendly interface to input medical data
